@@ -2,8 +2,8 @@
 Disciplina  : Lógica de Programação, turma IB, 2026S1
 Nome        : <<<Juan Mendes Vieira>>>
 Linguagem   : C
-Problema    : https://judge.beecrowd.com/pt/problems/view/1071
-Data        : DD/MM/2026
+Problema    : https://judge.beecrowd.com/pt/problems/view/1013
+Data        : 07/04/2026
 Objetivo    : Ler dois valores inteiros e mostrar a soma.
 Aprendizado : <<<comandos scanf e E comercial>>>
 -------------------------------------------------------------------------- */
