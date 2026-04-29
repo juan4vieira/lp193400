@@ -3,7 +3,7 @@ Disciplina  : Lógica de Programação, turma IB, 2026S1
 Nome        : <<<Juan Mendes Vieira>>>
 Linguagem   : C
 Problema    : https://judge.beecrowd.com/pt/problems/view/2758
-Data        : 29/04/2026
+Data        : 09/04/2026
 Objetivo    : Entrada e saída de números reais
 Aprendizado : <<<aplicação direta de printf e dos demais comandos. exercício de fixação>>>
 -------------------------------------------------------------------------- */
