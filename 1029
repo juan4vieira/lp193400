@@ -1,0 +1,48 @@
+/* --------------------------------------------------------------------------
+Disciplina  : Lógica de Programação, turma IB, 2026S1
+Nome        : <<<Juan Mendes Vieira>>>
+Linguagem   : C
+Problema    : 1029
+Data        : 20/05/2026
+Objetivo    : Fionnaci
+Aprendizado : <<<Uso de recursão>>>
+Pergunta de segunda ordem: <<<Fazer a pergunta>>>
+-------------------------------------------------------------------------- */
+
+#include <stdio.h>
+
+int fib_val[40];
+int fib_calls[40];
+
+void calcular_fibonacci(int n) {
+    if (fib_val[n] != -1) return;
+    
+    calcular_fibonacci(n - 1);
+    calcular_fibonacci(n - 2);
+    
+    fib_val[n] = fib_val[n - 1] + fib_val[n - 2];
+    fib_calls[n] = fib_calls[n - 1] + fib_calls[n - 2] + 2;
+}
+
+int main() {
+    int N, X;
+
+    for (int i = 0; i < 40; i++) {
+        fib_val[i] = -1;
+        fib_calls[i] = -1;
+    }
+    
+    fib_val[0] = 0; fib_calls[0] = 0;
+    fib_val[1] = 1; fib_calls[1] = 0;
+
+    if (scanf("%d", &N) == 1) {
+        while (N--) {
+            if (scanf("%d", &X) == 1) {
+                calcular_fibonacci(X);
+                printf("fib(%d) = %d calls = %d\n", X, fib_calls[X], fib_val[X]);
+            }
+        }
+    }
+
+    return 0;
+}
